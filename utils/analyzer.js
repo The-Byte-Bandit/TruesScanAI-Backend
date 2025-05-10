@@ -19,7 +19,7 @@ Based on the following news snippets:
 ${sourcesSummary}
 
 Please respond in JSON with fields: "summary", "bias", "sources".
-and if claim and snippet isnt news based, dont fat check it
+and if claim and snippet isnt news based, dont fat check it, and if it is appears to be nonsensical or incorrectly formatted, containing a mixture of programming terms and random characters. extract and use any sequence of characters that make sense and is news related
     `;
 
     const response = await openai.chat.completions.create({
